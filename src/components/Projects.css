@@ -1,0 +1,26 @@
+/* src/components/Projects.css */
+
+.projects-section {
+    margin-top: 30px;
+  }
+  
+  .repo-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .repo-item {
+    margin-bottom: 10px;
+  }
+  
+  .repo-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .repo-item a:hover {
+    color: #007bff;
+  }
+  
