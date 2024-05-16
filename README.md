@@ -17,6 +17,8 @@ Welcome to my personal portfolio! This website serves as a showcase for my progr
 ## Technologies Used
 
 - React
+- Node.js
+- Firebase
 - HTML
 - CSS
 
