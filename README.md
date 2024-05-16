@@ -1,4 +1,4 @@
-# Your Nour's Portfolio
+# Nour's Portfolio
 
 A showcase of my programming projects and skills.
 
