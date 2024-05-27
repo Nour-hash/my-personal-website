@@ -1,26 +1,52 @@
-/* src/components/Projects.css */
-
 .projects-section {
-    margin-top: 30px;
+  text-align: center;
+  padding: 50px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  max-width: 400px;
+  text-align: left;
+}
+
+.project-description h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+.github-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.github-icon {
+  font-size: 2em;
+  color: #333;
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1080px) {
+  .projects-container {
+    flex-direction: column;
   }
-  
-  .repo-list {
-    list-style: none;
-    padding: 0;
+
+  .project {
+    flex-direction: column;
   }
-  
-  .repo-item {
-    margin-bottom: 10px;
-  }
-  
-  .repo-item a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .repo-item a:hover {
-    color: #007bff;
-  }
-  
+}

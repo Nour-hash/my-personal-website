@@ -1,0 +1,9 @@
+.Experience {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .vertical-timeline::before {
+    background-color: black !important;
+  }
+  
