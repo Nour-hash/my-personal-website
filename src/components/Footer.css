@@ -14,3 +14,10 @@
   .footer p {
     color: #858B99;
   }
+
+  @media screen and (max-width: 500px) {
+    .footer {
+        width: 100%;
+        height: auto;
+      }
+  }

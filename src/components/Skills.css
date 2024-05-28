@@ -1,12 +1,56 @@
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.skill {
+.card {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.brown-text {
+    color: #795548; /* Adjust color to your preference */
+}
+
+.light {
+    font-weight: 300;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.col {
+    flex: 1 1 100px;
     margin: 10px;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
+    text-align: center;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px; /* Set a consistent height for all icons */
+}
+
+.responsive-img {
+    max-height: 100%; /* Scale the image to fit within the wrapper's height */
+    width: 100px; /* Maintain the aspect ratio */
+    margin-bottom: 8px;
 }

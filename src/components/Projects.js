@@ -22,7 +22,6 @@ function Projects() {
   const sliderStyles = {
     width: "500px",
     height: "280px",
-    zIndex: "-1", /* Add this line to ensure the slider is behind other content */
   };
 
   const descriptionStyles = {

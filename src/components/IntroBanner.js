@@ -1,7 +1,7 @@
 import React from 'react';
 import './IntroBanner.css'; // Import the CSS file
 
-const IntroBanner = () => {
+function IntroBanner() {
     // Function to handle the download button click
     const handleDownload = () => {
         // Replace 'cv_link.pdf' with the actual link to your CV file
@@ -10,7 +10,7 @@ const IntroBanner = () => {
 
     return (
         <div className="banner">
-            <img className="round-image" src="https://www.tutorialspoint.com/assets/questions/media/426142-1668760872.png" alt="Your alt" />
+            <img className="round-image" src="Foto_nassar.png" alt="Nour Picture" />
             <div className="text">
                 <h2>About Me</h2>
                 <p>Your text goes here...</p>

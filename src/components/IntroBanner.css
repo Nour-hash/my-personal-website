@@ -9,13 +9,15 @@
 
 .round-image {
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    margin-bottom: 20px; 
+    width: 500px;
+    height: 500px; /* Make height equal to width to maintain aspect ratio for a round image */
+    object-fit: cover; /* Ensures the image covers the given area without stretching */
+    margin-bottom: 20px;
+    border: 5px solid black;
 }
 
 .text {
-    max-width: 80%; 
+    max-width: 80%;
 }
 
 .text h2 {
@@ -36,7 +38,7 @@
     background-color: #0056b3;
 }
 
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 500px) {
     .banner {
         flex-direction: row;
         justify-content: center;
