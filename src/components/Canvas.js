@@ -1,8 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import './Canvas.css';
 
 
 function Canvas() {
- 
+    
+    
 };
 
 export default Canvas;

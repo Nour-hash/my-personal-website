@@ -4,7 +4,28 @@ import ImageSlider from "./ImageSlider";
 import { FaGithub } from 'react-icons/fa';
 
 function Projects() {
-  const slides = [
+  const project1 = [
+    { url: "https://via.placeholder.com/600x400/ff7f7f/333333?text=Image+1", title: "Image 1" },
+    { url: "https://via.placeholder.com/600x400/77dd77/333333?text=Image+2", title: "Image 2" },
+    { url: "https://via.placeholder.com/600x400/779ecb/333333?text=Image+3", title: "Image 3" },
+    { url: "https://via.placeholder.com/600x400/fdfd96/333333?text=Image+4", title: "Image 4" },
+    { url: "https://via.placeholder.com/600x400/ffb347/333333?text=Image+5", title: "Image 5" },
+  ];
+  const project2 = [
+    { url: "https://via.placeholder.com/600x400/ff7f7f/333333?text=Image+1", title: "Image 1" },
+    { url: "https://via.placeholder.com/600x400/77dd77/333333?text=Image+2", title: "Image 2" },
+    { url: "https://via.placeholder.com/600x400/779ecb/333333?text=Image+3", title: "Image 3" },
+    { url: "https://via.placeholder.com/600x400/fdfd96/333333?text=Image+4", title: "Image 4" },
+    { url: "https://via.placeholder.com/600x400/ffb347/333333?text=Image+5", title: "Image 5" },
+  ];
+  const project3 = [
+    { url: "https://via.placeholder.com/600x400/ff7f7f/333333?text=Image+1", title: "Image 1" },
+    { url: "https://via.placeholder.com/600x400/77dd77/333333?text=Image+2", title: "Image 2" },
+    { url: "https://via.placeholder.com/600x400/779ecb/333333?text=Image+3", title: "Image 3" },
+    { url: "https://via.placeholder.com/600x400/fdfd96/333333?text=Image+4", title: "Image 4" },
+    { url: "https://via.placeholder.com/600x400/ffb347/333333?text=Image+5", title: "Image 5" },
+  ];
+  const project4 = [
     { url: "https://via.placeholder.com/600x400/ff7f7f/333333?text=Image+1", title: "Image 1" },
     { url: "https://via.placeholder.com/600x400/77dd77/333333?text=Image+2", title: "Image 2" },
     { url: "https://via.placeholder.com/600x400/779ecb/333333?text=Image+3", title: "Image 3" },
@@ -33,7 +54,7 @@ function Projects() {
       <h2>Projects</h2>
       <div className="projects-container" style={containerStyles}>
         <div style={sliderStyles}>
-          <ImageSlider slides={slides} parentWidth={500} />
+          <ImageSlider slides={project1} parentWidth={500} />
         </div>
         <div className="project-description" style={descriptionStyles}>
           <h3>Project Title</h3>
@@ -54,12 +75,12 @@ function Projects() {
           </a>
         </div>
                 <div style={sliderStyles}>
-          <ImageSlider slides={slides} parentWidth={500} />
+          <ImageSlider slides={project2} parentWidth={500} />
         </div>
       </div>
       <div className="projects-container" style={containerStyles}>
         <div style={sliderStyles}>
-          <ImageSlider slides={slides} parentWidth={500} />
+          <ImageSlider slides={project3} parentWidth={500} />
         </div>
         <div className="project-description" style={descriptionStyles}>
           <h3>Project Title</h3>
@@ -80,7 +101,7 @@ function Projects() {
           </a>
         </div>
                 <div style={sliderStyles}>
-          <ImageSlider slides={slides} parentWidth={500} />
+          <ImageSlider slides={project4} parentWidth={500} />
         </div>
       </div>
     </section>
