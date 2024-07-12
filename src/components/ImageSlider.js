@@ -1,11 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 //code for slider from here: https://github.com/monsterlessonsacademy/monsterlessonsacademy/tree/278-advanced-react-slider
+
 const slideStyles = {
   width: "100%",
   height: "100%",
   borderRadius: "10px",
   backgroundSize: "cover",
   backgroundPosition: "center",
+  cursor: "pointer", // Add cursor style to indicate clickability
 };
 
 const rightArrowStyles = {
@@ -57,7 +59,7 @@ const slidesContainerOverflowStyles = {
   height: "100%",
 };
 
-const ImageSlider = ({ slides, parentWidth }) => {
+const ImageSlider = ({ slides, parentWidth, onImageClick }) => {
   const timerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {
@@ -107,10 +109,11 @@ const ImageSlider = ({ slides, parentWidth }) => {
       </div>
       <div style={slidesContainerOverflowStyles}>
         <div style={getSlidesContainerStylesWithWidth()}>
-          {slides.map((_, slideIndex) => (
+          {slides.map((slide, slideIndex) => (
             <div
               key={slideIndex}
               style={getSlideStylesWithBackground(slideIndex)}
+              onClick={() => onImageClick(slide.url)} // Handle image click
             ></div>
           ))}
         </div>
