@@ -1,23 +1,21 @@
 const mailgun = require('mailgun-js');
 
-console.log('MAILGUN_API_KEY:', process.env.MAILGUN_API_KEY);
-console.log('MAILGUN_DOMAIN:', process.env.MAILGUN_DOMAIN);
-
-
 const mg = mailgun({
     apiKey: process.env.MAILGUN_API_KEY,
     domain: process.env.MAILGUN_DOMAIN
 });
 
-module.exports = async (req, res) => {
+export default async function handler(req, res) {
+    const { body } = req;
+
     res.setHeader('Access-Control-Allow-Origin', '*'); // Allow all origins
     res.setHeader('Access-Control-Allow-Methods', 'POST');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-    const { name, email, phone, message } = req.body;
+    const { name, email, phone, message } = body;
 
     // Log request data
-    console.log('Received request:', req.body);
+    console.log('Received request:', body);
 
     try {
         const data = {
@@ -33,10 +31,10 @@ module.exports = async (req, res) => {
                 return res.status(500).json({ error: 'Failed to send message: ' + error.message });
             }
             console.log('Mailgun response:', body);
-            res.status(200).json({ success: true, message: 'Message sent successfully' });
+            return res.status(200).json({ success: true, message: 'Message sent successfully' });
         });
     } catch (error) {
         console.error('Error processing the request:', error);
-        res.status(500).json({ error: 'Error processing the request.' });
+        return res.status(500).json({ error: 'Error processing the request.' });
     }
-};
+}
