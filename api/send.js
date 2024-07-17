@@ -6,7 +6,7 @@ const mg = mailgun({
 });
 
 export default async function handler(req, res) {
-    const { body } = req;
+
 
     res.setHeader('Access-Control-Allow-Origin', '*'); // Allow all origins
     res.setHeader('Access-Control-Allow-Methods', 'POST');
@@ -14,8 +14,6 @@ export default async function handler(req, res) {
 
     const { name, email, phone, message } = body;
 
-    // Log request data
-    console.log('Received request:', body);
 
     try {
         const data = {

@@ -38,9 +38,7 @@ function App() {
       <section id="skills">
         <Skills />
       </section>
-      <section id="contact">
-        <Contact />
-      </section>
+     
      
       <button id="scrollButton" title="Go to about" onClick={scrollToHeader}>
         &#9650;
