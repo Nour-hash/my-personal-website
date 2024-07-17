@@ -29,7 +29,7 @@ List some of key projects with brief descriptions.
 1. [OSARegistry](https://github.com/Nour-hash/OSARegistry) -  Austria lacks consistent medical records for obstructive sleep apnea patients on ventilatory therapy, but aims to address this by establishing a shared database across medical institutions. This initiative includes a web application for doctors to efficiently input and access patient data from sleep labs. 
 2. [WhoAmI](https://github.com/Nour-hash/WhoAmI) - Introducing an AI-powered application that generates personalized images based on user first names, providing predictions on origin, age, and gender. Save and edit information for a tailored experience.
 
-3. [FAABIC - Find A Book By It's Cover] (https://github.com/Nour-hash/FAABIC-Book-Tracker)
+3. [FAABIC - Find A Book By It's Cover](https://github.com/Nour-hash/FAABIC-Book-Tracker)
 An innovative mobile app to manage book collections using AI for automatic book cover recognition. It offers a personalized reading experience, integrates APIs for book management, and is designed for private use, educational institutions, and bookstores.
 
 4. [Organize-IT] 
