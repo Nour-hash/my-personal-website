@@ -16,7 +16,7 @@ function Experience() {
            className="vertical-timeline-element--work"
            contentStyle={{ background: 'rgb(33, 150, 243)', color: '#000' }}
            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-           date="June 2023 – Present"
+           date="June 2024 – Present"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#000', textAlign: 'center', lineHeight: '48px', fontSize: '24px' }} // Adjust icon style
           icon={<i className="fas fa-briefcase"></i>}
         >
