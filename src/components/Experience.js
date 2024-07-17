@@ -10,7 +10,7 @@ function Experience() {
 
   return (
     <div className="<Exprience>">
-      <h1>react-scroll-animation component</h1>
+      <h1>Exprience</h1>
       <VerticalTimeline>
       <VerticalTimelineElement
            className="vertical-timeline-element--work"

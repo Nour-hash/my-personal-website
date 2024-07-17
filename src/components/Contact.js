@@ -1,4 +1,9 @@
 import React, { useState } from 'react';
+import { FaGithub } from 'react-icons/fa';
+import { ImLinkedin } from "react-icons/im";
+import { GrLinkedin } from "react-icons/gr";
+
+
 // import ReCAPTCHA from 'react-google-recaptcha';
 import './Contact.css';
 
@@ -53,12 +58,10 @@ function Contact() {
             <div className="contact-section">
                 <div className="contact-container">
                     <div className="contact-header">
-                        <h5 className="contact-title">KONTAKT</h5>
+                        <h5 className="contact-title">CONTACT</h5>
                     </div>
                     <div className="contact-description">
-                        <p>If you want to contact me, here are my contact details. Alternatively, you can send a message, and I will respond as soon as possible.</p>
-                        <p><a href="mailto:nournassar@hotmail.de">nournassar@hotmail.de</a></p>
-                        <p>Tel.: +43 676 3043802</p>
+                        <p>If you want to contact me send a message, and I will respond as soon as possible.</p>
                     </div>
                     <form className="contact-form" onSubmit={handleSubmit}>
                         <input
@@ -99,11 +102,12 @@ function Contact() {
                         <button type="submit">Absenden</button>
                     </form>
                     <div className="social-media">
-                        <a href="https://www.linkedin.com/in/nour-nassar-503b18263/" target="_blank" rel="noopener noreferrer">
-                            <img src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7528824071724d12a3e6c31eee0b40d4.png" alt="LinkedIn" />
+                        <a href="https://www.linkedin.com/in/nour-nassar-503b18263/" target="_blank" rel="noopener noreferrer"> 
+                        <ImLinkedin className="linkedin" />
+
                         </a>
-                        <a href="https://www.linkedin.com/company/wix-com" target="_blank" rel="noopener noreferrer">
-                            <img src="https://static.wixstatic.com/media/7528824071724d12a3e6c31eee0b40d4.png/v1/fill/w_30,h_30,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7528824071724d12a3e6c31eee0b40d4.png" alt="LinkedIn" />
+                        <a href="https://github.com/Nour-hash/" target="_blank" rel="noopener noreferrer">
+                        <FaGithub className="github-icon" /> 
                         </a>
                     </div>
                 </div>

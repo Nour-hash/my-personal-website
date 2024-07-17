@@ -16,7 +16,7 @@ const rightArrowStyles = {
   transform: "translate(0, -50%)",
   right: "32px",
   fontSize: "45px",
-  color: "#fff",
+  color: "#000000",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -27,7 +27,7 @@ const leftArrowStyles = {
   transform: "translate(0, -50%)",
   left: "32px",
   fontSize: "45px",
-  color: "#fff",
+  color: "#000000",
   zIndex: 1,
   cursor: "pointer",
 };
@@ -92,7 +92,7 @@ const ImageSlider = ({ slides, parentWidth, onImageClick }) => {
     }
     timerRef.current = setTimeout(() => {
       goToNext();
-    }, 3000);
+    }, 10000000);
 
     return () => clearTimeout(timerRef.current);
   }, [goToNext]);
