@@ -16,18 +16,23 @@ function Projects() {
     { url:  images['OSA_User_permission.png'], title: "Image 4" },
   ];
   const FAABIC = [
-    { url: "https://via.placeholder.com/600x400/ff7f7f/333333?text=Image+1", title: "Image 1" },
-    { url: "https://via.placeholder.com/600x400/77dd77/333333?text=Image+2", title: "Image 2" },
-    { url: "https://via.placeholder.com/600x400/779ecb/333333?text=Image+3", title: "Image 3" },
-    { url: "https://via.placeholder.com/600x400/fdfd96/333333?text=Image+5", title: "Image 4" },
-    { url: "https://via.placeholder.com/600x400/ffb347/333333?text=Image+5", title: "Image 5" },
+    { url: images['FAABIC-home.png'], title: "Image 1" },    
+    { url: images['FAABIC-guide.png'], title: "Image 2" },    
+    { url: images['FAABIC-search-isbn.png'], title: "Image 3" },    
+    { url: images['FAABIC-details.png'], title: "Image 4" },    
+    { url: images['FAABIC-search-front.png'], title: "Image 5" },    
+    { url: images['FAABIC-search-back.png'], title: "Image 6" },    
+    { url: images['FAABIC-AI_Result.png'], title: "Image 7" },    
+    { url: images['FAABIC-library.png'], title: "Image 8" },  
+    { url: images['FAABIC-login.png'], title: "Image 9" },   
+    { url: images['FAABIC-user.png'], title: "Image 10" },   
   ];
   const WhoAmI = [
     { url: images['Who_Am_I_Homepage.png'], title: "Image 1" },    
-    { url: images['Who_Am_I_result_with_picture.png'], title: "Image 1" },     
-    { url: images['Who_Am_I_login.png'], title: "Image 1" },    
-    { url: images['Who_Am_I_search_history.png'], title: "Image 1" },    
-    { url: images['Who_Am_I_edit.png'], title: "Image 1" },    
+    { url: images['Who_Am_I_result_with_picture.png'], title: "Image 2" },     
+    { url: images['Who_Am_I_login.png'], title: "Image 3" },    
+    { url: images['Who_Am_I_search_history.png'], title: "Image 4" },    
+    { url: images['Who_Am_I_edit.png'], title: "Image 5" },    
   ];
   const OrganizeIT = [    
     { url: images['Organize_IT_login_desktop.png'], title: "Image 1" },    
