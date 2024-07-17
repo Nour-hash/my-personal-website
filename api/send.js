@@ -1,24 +1,23 @@
 const mailgun = require('mailgun-js');
-require('dotenv').config();
+
+console.log('MAILGUN_API_KEY:', process.env.MAILGUN_API_KEY);
+console.log('MAILGUN_DOMAIN:', process.env.MAILGUN_DOMAIN);
+
 
 const mg = mailgun({
     apiKey: process.env.MAILGUN_API_KEY,
     domain: process.env.MAILGUN_DOMAIN
 });
 
-export default async function handler(req, res) {
-    // Set CORS headers
-    res.setHeader('Access-Control-Allow-Origin', '*');
+module.exports = async (req, res) => {
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Allow all origins
     res.setHeader('Access-Control-Allow-Methods', 'POST');
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-    if (req.method === 'OPTIONS') {
-        return res.status(200).end();
-    }
-
     const { name, email, phone, message } = req.body;
 
-    console.log('Received request:', req.body); // Log request data for debugging
+    // Log request data
+    console.log('Received request:', req.body);
 
     try {
         const data = {
@@ -31,13 +30,13 @@ export default async function handler(req, res) {
         mg.messages().send(data, (error, body) => {
             if (error) {
                 console.error('Mailgun error:', error);
-                return res.status(500).send('Failed to send message: ' + error.message);
+                return res.status(500).json({ error: 'Failed to send message: ' + error.message });
             }
             console.log('Mailgun response:', body);
-            res.status(200).send({ success: true, message: 'Message sent successfully' });
+            res.status(200).json({ success: true, message: 'Message sent successfully' });
         });
     } catch (error) {
         console.error('Error processing the request:', error);
-        res.status(500).send('Error processing the request.');
+        res.status(500).json({ error: 'Error processing the request.' });
     }
 };
