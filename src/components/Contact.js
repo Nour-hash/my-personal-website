@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { ImLinkedin } from "react-icons/im";
-import { GrLinkedin } from "react-icons/gr";
 
 
 // import ReCAPTCHA from 'react-google-recaptcha';
@@ -28,7 +27,7 @@ function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/send', {
+            const response = await fetch('https://personal-website-nournassar.vercel.app/api/send', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

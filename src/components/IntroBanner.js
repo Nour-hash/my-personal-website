@@ -4,7 +4,7 @@ import './IntroBanner.css'; // Import the CSS file
 function IntroBanner() {
     // Function to handle the download button click
     const handleDownload = () => {
-        window.open('cv_link.pdf', '_blank');
+        window.open('NourElDin_Nassar_CV_2024.pdf', '_blank');
     };
 
     return (
